@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Agregar Condominio";
+}
+
+<div class="row justify-content-center">
+    <div class="col-10">
+        <div class="card">
+            <div class="card-header bg-success text-white text-center">
+                <h3>Crear Condominio</h3>
+            </div>
+            <div class="card-body p-4">
+                <form method="post" asp-action="Create">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Logo</label>
+                                <input type="text" name="Logo" class="form-control" id="Logo">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="lastname" class="form-label">Código</label>
+                                <input type="text" name="Codigo" class="form-control" id="Codigo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Nombre</label>
+                                <input type="text" name="Nombre" class="form-control" id="Nombre">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">TelefonoOficina</label>
+                                <input type="text" name="TelefonoOficina" class="form-control" id="TelefonoOficina">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Dirección</label>
+                                <input type="text" name="Direccion" class="form-control" id="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-end mt-3">
+                        <button type="submit" class="btn btn-success" id="btn-submit">Guardar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

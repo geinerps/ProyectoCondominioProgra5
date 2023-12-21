@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Registro de Viviendas";
+}
+<div class="row justify-content-center">
+    <div class="col-10">
+        <div class="card">
+            <div class="card-header bg-success text-white text-center">
+                <h3>Crear Condominio</h3>
+            </div>
+            <div class="card-body p-4">
+                <form method="post" asp-action="Create">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">numeroVivienda</label>
+                                <input type="text" name="numeroVivienda" class="form-control" id="numeroVivienda">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3">
+                                <label for="lastname" class="form-label">descripcion</label>
+                                <input type="text" name="descripcion" class="form-control" id="descripcion">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">numeroHabitaciones</label>
+                                <input type="text" name="numeroHabitaciones" class="form-control" id="numeroHabitaciones">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">cochera</label>
+                                <input type="text" name="cochera" class="form-control" id="cochera">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">idPersona</label>
+                                <input type="text" name="idPersona" class="form-control" id="idPersona">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-end mt-3">
+                        <button type="submit" class="btn btn-success" id="btn-submit">Guardar</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
